@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<meta charset="utf-8">
+	<title>Generator Pixabay</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="app">
+		<form action="">
+			<h5>Rechercher des images :</h5>
+			<div class="container">
+				<div class="container_field">
+					<label for="language">Langue : </label>
+					<select>
+						<option value="french">Française</option>
+						<option value="english">Anglaise</option>
+						<option value="spanish">Espagnole</option>
+						<option value="italian">Italienne</option>
+					</select>
+					<span></span>
+				</div>		
+				<div class="container_field">	
+					<label for="language">Mots clés : </label>
+					<input type="text" id="categorie" placeholder="...." maxlength="100">
+				</div>
+				<div class="container_field">
+					<input type="submit" value="Rechercher">
+				</div>
+			</div>
+		</form>
+		<div class="containerImages">
+
+		</div>	
+			
+	</div>
+	<script src="./apipixabay.js"></script>
+</body>
+</html> 
